@@ -101,6 +101,12 @@ header {
 
 .about .text .bullet-points {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 24px;
+}
+
+.about .text .bullet-point {
+  display: flex;
   gap: 12px;
 }
 
