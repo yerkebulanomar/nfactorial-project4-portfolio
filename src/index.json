@@ -1,0 +1,47 @@
+{
+  "data": {
+    "aboutMe": [
+      "nFactorial student",
+      "Java, HTML, CSS, Javascript, React JS",
+      "learning Redux and Node JS",
+      "English, Russian, Kazakh, Turkish",
+      "KTL alumni, almost SDU economics alumni"
+    ],
+    "experience": [
+      {
+        "id": "0",
+        "year": "2022",
+        "name": "nFactorial Full-stack course",
+        "city": "Kazakhstan, Astana",
+        "description": "Learnt Java basics, HTML5 ,CSS, Javascript, React JS, Bootstrap, Material UI, Redux during 4 months of 6 months course, backend module of the course is yet to come"
+      },
+      {
+        "id": "1",
+        "year": "2023",
+        "name": "Freelance Webdeveloper",
+        "city": "Kazakhstan, Astana",
+        "description": "Develop website visuals and interfaces using React JS, HTML and CSS"
+      }
+    ],
+    "projects": [
+      {
+        "id": "0",
+        "name": "To-Do List",
+        "picture": "./media/todolist.PNG",
+        "description": "Study project that includes opening of several modal windows, addition of new items, changing categories and deleting of items",
+        "link": "https://nfactorial-to-do-list.vercel.app/",
+        "linkName": "nfactorial-to-do-list.vercel.app",
+        "bullet": "HTML, CSS, React JS, Bootstrap"
+      },
+      {
+        "id": "1",
+        "name": "People Pro website",
+        "picture": "./media/peoplepro.PNG",
+        "description": "Website visuals and inteface for a non-profit organization with several opening pages, several forms that gather information into Google Document",
+        "link": "https://peoplepro.vercel.app/",
+        "linkName": "peoplepro.vercel.app",
+        "bullet": "HTML, CSS, React JS, Bootstrap"
+      }
+    ]
+  }
+}

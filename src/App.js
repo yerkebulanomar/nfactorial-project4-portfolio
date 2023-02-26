@@ -2,89 +2,67 @@ import "./App.css";
 import BLUE_POINTER from "./media/Pointer.svg";
 import MY_PHOTO from "./media/123.jpg";
 import ORANGE_POINTER from "./media/Orange point.svg";
-import TO_DO_LIST from "./media/todolist.PNG";
-import PEOPLE_PRO from "./media/peoplepro.PNG";
+import json from "./index.json";
+import GITHUB from "./media/github-mark-white.svg";
+import LINKEDIN_LOGO from "./media/LI-Logo.png";
+import TELEGRAM_LOGO from "./media/telegram.png";
 
 function App() {
-  const aboutMe = [
-    "SDU, KTL alumni",
-    "Java, HTML, CSS, Javascript, React JS",
-    "English, Russian, Kazakh, Turkish",
-  ];
-
-  const experience = [
-    {
-      id: 0,
-      year: "2022",
-      name: "nFactorial Full-stack course",
-      city: "Kazakhstan, Astana",
-      description:
-        "Learnt Java basics, HTML5 ,CSS, Javascript, React JS, Bootstrap, Material UI, Redux during 6 months course",
-    },
-
-    {
-      id: 1,
-      year: "2023",
-      name: "Freelance Webdeveloper",
-      city: "Kazakhstan, Astana",
-      description:
-        "Develop website visuals and interfaces using React JS, HTML and CSS",
-    },
-  ];
-
-  const projects = [
-    {
-      id: 0,
-      name: "To-Do List",
-      picture: TO_DO_LIST,
-      description:
-        "Study project that includes opening of several modal windows, addition of new items, changing categories and deleting of items",
-      link: "https://nfactorial-to-do-list.vercel.app/",
-      linkName: "nfactorial-to-do-list.vercel.app",
-      bullet: "HTML, CSS, React JS, Bootstrap",
-    },
-    {
-      id: 1,
-      name: "People Pro website",
-      picture: PEOPLE_PRO,
-      description:
-        "Website visuals and inteface for a non-profit organization with several opening pages, several forms that gather information into Google Document",
-      link: "https://peoplepro.vercel.app/",
-      linkName: "peoplepro.vercel.app",
-      bullet: "HTML, CSS, React JS, Bootstrap",
-    },
-  ];
-
   return (
     <div className="App">
       <header>
         <h3 className="header-name">Yerkebulan Omar</h3>
         <div className="nav-btns">
-          <button className="nav-btn">About</button>
-          <button className="nav-btn">Experience</button>
-          <button className="nav-btn">Projects</button>
-          <button className="nav-btn">Contacts</button>
+          <button
+            className="nav-btn"
+            onClick={() => window.location.replace("/#about")}>
+            About
+          </button>
+          <button
+            className="nav-btn"
+            onClick={() => window.location.replace("/#experience")}>
+            Experience
+          </button>
+          <button
+            className="nav-btn"
+            onClick={() => window.location.replace("/#projects")}>
+            Projects
+          </button>
+          <button
+            className="nav-btn"
+            onClick={() => window.location.replace("/#contacts")}>
+            Contacts
+          </button>
         </div>
       </header>
       <div className="promo section">
         <h1 className="title">
-          Hi, I’m Yerkebulan Omar,<br></br> I build things for the web.{" "}
+          Hi, I’m Yerkebulan,
+          <br /> I build things for the web.
         </h1>
         <h5 className="kanit subtitle">
           I’m software developer and this is my portfolio.
         </h5>
-        <button className="CV-btn">Check out my CV</button>
+        <button
+          className="CV-btn"
+          onClick={() => {
+            window.open(
+              "https://drive.google.com/file/d/1tg6zEUQ-ckKAQAlEuI-zSAIMrI9sgO-T/view?usp=sharing",
+              "_blank"
+            );
+          }}>
+          Check out my CV
+        </button>
       </div>
-      <div className="about-me section">
+      <div className="about-me section" id="about">
         <div className="text">
           <h1 className="title">About me</h1>
           <h5 className="kanit summary">
-            I’m software developer and this is my portfolio. I’m software
-            developer and this is my portfolio. I’m software developer and this
-            is my portfolio. I’m software developer and this is my portfolio.
+            I've been studying programming for several months and looking for a
+            non-paid internship opportunity in Java/React JS
           </h5>
           <div className="bullet-points">
-            {aboutMe.map((item, index) => (
+            {json.data.aboutMe.map((item, index) => (
               <div className="bullet-point" key={index}>
                 <img className="bullet" src={BLUE_POINTER} alt="bullet point" />
                 <p className="bullet-point-text">{item}</p>
@@ -94,10 +72,10 @@ function App() {
         </div>
         <img className="my-photo" src={MY_PHOTO} alt="my pic" />
       </div>
-      <div className="experience section">
+      <div className="experience section" id="experience">
         <h1 className="title">Experience</h1>
         <div className="workplace-list">
-          {experience.map((item, index) => (
+          {json.data.experience.map((item, index) => (
             <div className="workplace" key={index}>
               <h5 className="year">{item.year}</h5>
               <div className="workplace-info">
@@ -116,10 +94,10 @@ function App() {
           ))}
         </div>
       </div>
-      <div className="projects section">
+      <div className="projects" id="projects">
         <h1 className="title">Projects I've Worked On</h1>
         <div className="projects-list">
-          {projects.map((item, index) => (
+          {json.data.projects.map((item, index) => (
             <div
               className="project"
               key={index}
@@ -128,7 +106,7 @@ function App() {
               }}>
               <img
                 className="project-photo"
-                src={item.picture}
+                src={require(`${item.picture}`)}
                 alt="project pic"
               />
               <div className="text">
@@ -162,6 +140,45 @@ function App() {
           ))}
         </div>
       </div>
+      <div className="contact section" id="contacts">
+        <h1 className="title">Say Hello</h1>
+        <h5 className="kanit subtitle">
+          I have lots of passion to explore and learn new things and looking
+          forward for opportunities.
+        </h5>
+        <div className="buttons">
+          <button
+            className="contact-btn"
+            onClick={() => {
+              window.open("https://telegram.me/yerkebulanomar", "_blank");
+            }}>
+            <img className="btn-img" src={TELEGRAM_LOGO} alt="linkedin" />
+          </button>
+          <button
+            className="contact-btn"
+            onClick={() => {
+              window.open("https://github.com/yerkebulanomar", "_blank");
+            }}>
+            <img className="btn-img" src={GITHUB} alt="github" />
+          </button>
+          <button
+            className="contact-btn"
+            onClick={() => {
+              window.open("https://www.linkedin.com", "_blank");
+            }}>
+            <img className="btn-img" src={LINKEDIN_LOGO} alt="linkedin" />
+          </button>
+        </div>
+      </div>
+      <footer>
+        <p className="footer-text">
+          Made with ❤️ at{" "}
+          <a href="https://www.nfactorial.school/">nFactorial</a> in 2023
+        </p>
+        <p className="footer-text grey-text">
+          Credits: icons from <a href="https://icons8.com/">Icons8</a>
+        </p>
+      </footer>
     </div>
   );
 }
