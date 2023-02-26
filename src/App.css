@@ -28,30 +28,21 @@ header {
   background-color: transparent;
 }
 
-.promo {
+.section {
   display: flex;
-  flex-direction: column;
   padding: 160px 80px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.promo {
+  flex-direction: column;
+}
+
 .promo .title {
-  font-family: "Courier New";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 72px;
-  color: #ffffff;
   margin-bottom: 32px;
 }
 
 .promo .subtitle {
-  font-family: "Kanit";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
   margin-bottom: 40px;
 }
 
@@ -68,20 +59,18 @@ header {
   color: #ffffff;
 }
 
-.about {
-  padding: 160px 80px;
-  display: flex;
-  gap: 370px;
+.about-me {
   justify-content: space-between;
+  gap: 370px;
 }
 
-.about .text {
+.text {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.about .text .title {
+.title {
   font-family: "Courier New";
   font-style: normal;
   font-weight: 700;
@@ -90,7 +79,7 @@ header {
   color: #ffffff;
 }
 
-.about .text .summary {
+.kanit {
   font-family: "Kanit";
   font-style: normal;
   font-weight: 300;
@@ -99,23 +88,23 @@ header {
   color: #ffffff;
 }
 
-.about .text .bullet-points {
+.about-me .text .bullet-points {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 24px;
 }
 
-.about .text .bullet-point {
+.bullet-point {
   display: flex;
   gap: 12px;
 }
 
-.about .text .bullet-points .bullet {
+.about-me .text .bullet-points .bullet {
   width: 22px;
   height: 22px;
 }
 
-.about .text .bullet-points .bullet-point-text {
+.bullet-point-text {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -124,8 +113,112 @@ header {
   color: #ffffff;
 }
 
-.about .my-photo {
+.about-me .my-photo {
   width: 280px;
   height: 320px;
   border: 4px solid #fd5a14;
+}
+
+.experience {
+  flex-direction: column;
+  gap: 64px;
+  padding-right: 730px;
+}
+
+.experience .workplace-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.experience .workplace {
+  display: flex;
+  gap: 100px;
+}
+
+.experience .year {
+  font-family: "Courier New";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.experience .workplace-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience .workplace-title {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.experience .workplace-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+}
+
+.experience .workplace-location {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  margin: 0 0 16px 34px;
+}
+
+.experience .workplace-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.projects {
+  flex-direction: column;
+  gap: 128px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+}
+
+.project {
+  display: flex;
+  gap: 186px;
+}
+
+.even {
+  flex-direction: row-reverse;
+}
+
+.project-photo {
+  width: 626px;
+  height: 388px;
+  border: 4px solid #fd5a14;
+}
+
+.project-name {
+  font-family: "Courier New";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  color: #ffffff;
+}
+
+a {
+  color: white;
 }
