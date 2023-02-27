@@ -54,14 +54,14 @@ header {
 .CV-btn {
   width: 200px;
   height: 56px;
-  background: #fd5a14;
+  background: #ffffff;
   border-radius: 2px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: #ffffff;
+  /* color: #ffffff; */
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -79,6 +79,10 @@ header {
   gap: 32px;
 }
 
+h1 {
+  height: 142px;
+}
+
 .title {
   font-family: "Courier New";
   font-style: normal;
@@ -86,6 +90,7 @@ header {
   font-size: 60px;
   line-height: 72px;
   color: #ffffff;
+  width: 75%;
 }
 
 .kanit {
@@ -125,7 +130,7 @@ header {
 .about-me .my-photo {
   width: 280px;
   height: 320px;
-  border: 4px solid #fd5a14;
+  border: 4px solid rgba(255, 255, 255, 0.2);
 }
 
 .experience {
@@ -219,7 +224,7 @@ header {
 .project-photo {
   width: fit-content;
   height: 388px;
-  border: 4px solid #fd5a14;
+  border: 4px solid rgba(255, 255, 255, 0.2);
 }
 
 .project-name {

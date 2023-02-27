@@ -6,6 +6,7 @@ import json from "./index.json";
 import GITHUB from "./media/github-mark-white.svg";
 import LINKEDIN_LOGO from "./media/LI-Logo.png";
 import TELEGRAM_LOGO from "./media/telegram.png";
+import TypingAnimation from "./Components/TypingAnimation";
 
 function App() {
   return (
@@ -37,8 +38,10 @@ function App() {
       </header>
       <div className="promo section">
         <h1 className="title">
-          Hi, I’m Yerkebulan,
-          <br /> I build things for the web.
+          <TypingAnimation
+            text="  Hi, I’m Yerkebulan Omar,   I build things for the web."
+            speed={100}
+          />
         </h1>
         <h5 className="kanit subtitle">
           I’m software developer and this is my portfolio.
@@ -143,7 +146,7 @@ function App() {
       <div className="contact section" id="contacts">
         <h1 className="title">Say Hello</h1>
         <h5 className="kanit subtitle">
-          I have lots of passion to explore and learn new things and looking
+          I have a lot of passion to explore and learn new things and looking
           forward for opportunities.
         </h5>
         <div className="buttons">
