@@ -75,7 +75,7 @@ function App() {
         </div>
         <img className="my-photo" src={MY_PHOTO} alt="my pic" />
       </div>
-      <div className="experience section" id="experience">
+      <div className="experience" id="experience">
         <h1 className="title">Experience</h1>
         <div className="workplace-list">
           {json.data.experience.map((item, index) => (

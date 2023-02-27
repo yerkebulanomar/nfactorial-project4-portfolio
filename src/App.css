@@ -35,12 +35,13 @@ header {
 
 .section {
   display: flex;
-  padding: 260px 6%;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 160px 6%;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
 .promo {
   flex-direction: column;
+  margin-top: 100px;
 }
 
 .promo .title {
@@ -71,6 +72,7 @@ header {
 .about-me {
   justify-content: space-between;
   gap: 370px;
+  padding-top: 200px;
 }
 
 .text {
@@ -134,6 +136,9 @@ h1 {
 }
 
 .experience {
+  display: flex;
+  padding: 160px 6%;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
   flex-direction: column;
   gap: 64px;
   padding-right: 730px;
@@ -200,8 +205,8 @@ h1 {
 
 .projects {
   display: flex;
-  padding: 160px 6%;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 120px 6%;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
   flex-direction: column;
   gap: 64px;
 }
@@ -249,7 +254,7 @@ footer {
   padding: 32px 6%;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
 .footer-text {
