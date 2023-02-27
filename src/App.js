@@ -37,7 +37,7 @@ function App() {
         </div>
       </header>
       <div className="promo section">
-        <h1 className="title">
+        <h1 className="height title">
           <TypingAnimation
             text="  Hi, I’m Yerkebulan Omar,   I build things for the web."
             speed={100}
@@ -57,7 +57,7 @@ function App() {
           Check out my CV
         </button>
       </div>
-      <div className="about-me section" id="about">
+      <div className="about-me " id="about">
         <div className="text">
           <h1 className="title">About me</h1>
           <h5 className="kanit summary">
@@ -143,7 +143,7 @@ function App() {
           ))}
         </div>
       </div>
-      <div className="contact section" id="contacts">
+      <div className="contact" id="contacts">
         <h1 className="title">Say Hello</h1>
         <h5 className="kanit subtitle">
           I have a lot of passion to explore and learn new things and looking
