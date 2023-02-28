@@ -1,11 +1,11 @@
 header {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 32px 6%;
-  /* gap: 45%; */
-  /* position: fixed; */
+  gap: 45%;
+  position: fixed;
   top: 0;
-  /* width: 100%; */
+  width: 100%;
   background-color: #130125;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -36,13 +36,13 @@ header {
 
 .section {
   display: flex;
-  padding: 160px 6%;
+  padding: 260px 6%;
 }
 
 .promo {
   flex-direction: column;
   display: flex;
-  padding: 160px 420px 160px 6%;
+  padding: 260px 30% 160px 6%;
 }
 
 .promo .title {
@@ -144,7 +144,7 @@ header {
 
 .experience {
   display: flex;
-  padding: 160px 6%;
+  padding: 260px 6%;
   flex-direction: column;
   gap: 64px;
   padding-right: 730px;
@@ -211,7 +211,7 @@ header {
 
 .projects {
   display: flex;
-  padding: 100px 6%;
+  padding: 160px 6%;
   flex-direction: column;
   gap: 64px;
 }
@@ -306,4 +306,14 @@ footer {
 .btn-img {
   height: 50px;
   width: 50px;
+}
+
+@media only screen and (width: 1280px) {
+  .promo {
+    padding-right: 15%;
+  }
+
+  header {
+    gap: 33%;
+  }
 }
