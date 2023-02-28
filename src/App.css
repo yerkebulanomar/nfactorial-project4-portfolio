@@ -144,7 +144,7 @@ header {
 
 .experience {
   display: flex;
-  padding: 260px 6%;
+  padding: 200px 6%;
   flex-direction: column;
   gap: 64px;
   padding-right: 730px;
