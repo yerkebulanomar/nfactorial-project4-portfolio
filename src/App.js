@@ -39,7 +39,7 @@ function App() {
       <div className="promo section">
         <h1 className="height title">
           <TypingAnimation
-            text="  Hi, I’m Yerkebulan Omar,   I build things for the web."
+            text="  Hi, I’m Yerkebulan,         I build things for the web."
             speed={100}
           />
         </h1>
@@ -60,10 +60,7 @@ function App() {
       <div className="about-me " id="about">
         <div className="text">
           <h1 className="title">About me</h1>
-          <h5 className="kanit summary">
-            I've been studying programming for several months and looking for a
-            non-paid internship opportunity in Java/React JS
-          </h5>
+          <h5 className="kanit summary">{json.data.aboutMeSummary}</h5>
           <div className="bullet-points">
             {json.data.aboutMe.map((item, index) => (
               <div className="bullet-point" key={index}>
@@ -145,10 +142,7 @@ function App() {
       </div>
       <div className="contact" id="contacts">
         <h1 className="title">Say Hello</h1>
-        <h5 className="kanit subtitle">
-          I have a lot of passion to explore and learn new things and looking
-          forward for opportunities.
-        </h5>
+        <h5 className="kanit subtitle">{json.data.contactSubtitle}</h5>
         <div className="buttons">
           <button
             className="contact-btn"

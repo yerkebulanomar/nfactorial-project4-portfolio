@@ -1,5 +1,6 @@
 {
   "data": {
+    "aboutMeSummary": "I've been studying programming for several months and looking for a non-paid internship opportunity in Java/React JS",
     "aboutMe": [
       "nFactorial student",
       "Java, HTML, CSS, Javascript, React JS",
@@ -42,6 +43,7 @@
         "linkName": "peoplepro.vercel.app",
         "bullet": "HTML, CSS, React JS, Bootstrap"
       }
-    ]
+    ],
+    "contactSubtitle": "I have a lot of passion to explore and learn new things and looking forward for opportunities."
   }
 }
