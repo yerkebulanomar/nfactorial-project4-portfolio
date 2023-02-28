@@ -39,7 +39,7 @@ function App() {
       <div className="promo">
         <h1 className="height title">
           <TypingAnimation
-            text="  Hi, I’m Yerkebulan,         I build things for the web."
+            text="  Hi, I’m Yerkebulan,        I build things for the web."
             speed={100}
           />
         </h1>
