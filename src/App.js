@@ -12,7 +12,11 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1 className="header-name courier">Yerkebulan Omar</h1>
+        <button
+          className="header-name courier"
+          onClick={() => window.location.replace("/#promo")}>
+          Yerkebulan Omar
+        </button>
         <div className="nav-btns">
           <button
             className="nav-btn Inter-500"
@@ -36,7 +40,7 @@ function App() {
           </button>
         </div>
       </header>
-      <div className="promo">
+      <div className="promo" id="promo">
         <h1 className="height title courier">
           <TypingAnimation
             text="  Hi, I’m Yerkebulan,        I build things for the web."

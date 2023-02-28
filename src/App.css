@@ -43,6 +43,7 @@ header {
   font-size: 32px;
   line-height: 36px;
   background-color: transparent;
+  border-radius: 2px;
 }
 
 .nav-btns {
