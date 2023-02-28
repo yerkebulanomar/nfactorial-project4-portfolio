@@ -42,7 +42,7 @@ header {
 .promo {
   flex-direction: column;
   display: flex;
-  padding: 160px 430px 160px 6%;
+  padding: 160px 420px 160px 6%;
 }
 
 .promo .title {
