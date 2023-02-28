@@ -1,3 +1,33 @@
+.Inter-500 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.Inter-400 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.courier {
+  font-family: "Courier Prime", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.kanit {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
 header {
   display: flex;
   padding: 32px 6%;
@@ -10,12 +40,9 @@ header {
 }
 
 .header-name {
-  font-family: "Courier Prime", sans-serif;
-  font-style: normal;
-  font-weight: 700;
   font-size: 32px;
   line-height: 36px;
-  color: #ffffff;
+  background-color: transparent;
 }
 
 .nav-btns {
@@ -24,23 +51,12 @@ header {
 }
 
 .nav-btn {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
   background-color: transparent;
 }
 
-.section {
-  display: flex;
-  padding: 260px 6%;
-}
-
 .promo {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   padding: 260px 30% 160px 6%;
 }
 
@@ -58,7 +74,6 @@ header {
   background: #ffffff;
   border-radius: 2px;
   font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -92,21 +107,8 @@ header {
 }
 
 .title {
-  font-family: "Courier New";
-  font-style: normal;
-  font-weight: 700;
   font-size: 60px;
   line-height: 72px;
-  color: #ffffff;
-}
-
-.kanit {
-  font-family: "Kanit";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
 }
 
 .about-me .text .bullet-points {
@@ -123,15 +125,6 @@ header {
 .about-me .text .bullet-points .bullet {
   width: 22px;
   height: 22px;
-}
-
-.bullet-point-text {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
 }
 
 .about-me .my-photo {
@@ -160,12 +153,8 @@ header {
 }
 
 .experience .year {
-  font-family: "Courier New";
-  font-style: normal;
-  font-weight: 700;
   font-size: 12px;
   line-height: 22px;
-  color: #ffffff;
 }
 
 .experience .workplace-info {
@@ -179,32 +168,8 @@ header {
   margin-bottom: 8px;
 }
 
-.experience .workplace-name {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
 .experience .workplace-location {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: #ffffff;
   margin: 0 0 16px 34px;
-}
-
-.experience .workplace-description {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
 }
 
 .projects {
@@ -236,12 +201,8 @@ header {
 }
 
 .project-name {
-  font-family: "Courier New";
-  font-style: normal;
-  font-weight: 700;
   font-size: 40px;
   line-height: 54px;
-  color: #ffffff;
 }
 
 a {
@@ -261,15 +222,6 @@ footer {
   justify-content: space-between;
 }
 
-.footer-text {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-}
-
 .grey-text {
   opacity: 0.5;
 }
@@ -282,14 +234,8 @@ footer {
 .contact-btn {
   width: 56px;
   height: 56px;
-  background: transparent;
   border-radius: 2px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  color: #ffffff;
+  background: transparent;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -306,7 +252,42 @@ footer {
   width: 50px;
 }
 
-@media only screen and (width: 1280px) {
+@media only screen and (max-width: 1440px) {
+  .promo {
+    padding-right: 25%;
+  }
+
+  header {
+    gap: 39%;
+  }
+
+  .about-me {
+    padding-top: 200px;
+  }
+
+  .experience {
+    padding-top: 200px;
+  }
+
+  .projects {
+    padding-top: 200px;
+  }
+
+  .project {
+    gap: 8%;
+  }
+
+  .projects-list {
+    gap: 170px;
+  }
+
+  .contact {
+    padding-top: 200px;
+    padding-bottom: 240px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
   .promo {
     padding-right: 17%;
   }
@@ -329,5 +310,10 @@ footer {
 
   .project {
     gap: 8%;
+  }
+
+  .contact {
+    padding-top: 200px;
+    padding-bottom: 240px;
   }
 }

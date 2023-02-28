@@ -2,42 +2,42 @@ import "./App.css";
 import BLUE_POINTER from "./media/Pointer.svg";
 import MY_PHOTO from "./media/123.jpg";
 import ORANGE_POINTER from "./media/Orange point.svg";
-import json from "./index.json";
 import GITHUB from "./media/github-mark-white.svg";
 import LINKEDIN_LOGO from "./media/LI-Logo.png";
 import TELEGRAM_LOGO from "./media/telegram.png";
 import TypingAnimation from "./Components/TypingAnimation";
+import json from "./index.json";
 
 function App() {
   return (
     <div className="App">
       <header>
-        <h3 className="header-name">Yerkebulan Omar</h3>
+        <h1 className="header-name courier">Yerkebulan Omar</h1>
         <div className="nav-btns">
           <button
-            className="nav-btn"
+            className="nav-btn Inter-500"
             onClick={() => window.location.replace("/#about")}>
             About
           </button>
           <button
-            className="nav-btn"
+            className="nav-btn Inter-500"
             onClick={() => window.location.replace("/#experience")}>
             Experience
           </button>
           <button
-            className="nav-btn"
+            className="nav-btn Inter-500"
             onClick={() => window.location.replace("/#projects")}>
             Projects
           </button>
           <button
-            className="nav-btn"
+            className="nav-btn Inter-500"
             onClick={() => window.location.replace("/#contacts")}>
             Contacts
           </button>
         </div>
       </header>
       <div className="promo">
-        <h1 className="height title">
+        <h1 className="height title courier">
           <TypingAnimation
             text="  Hi, I’m Yerkebulan,        I build things for the web."
             speed={100}
@@ -59,13 +59,13 @@ function App() {
       </div>
       <div className="about-me " id="about">
         <div className="text">
-          <h1 className="title">About me</h1>
+          <h1 className="title courier">About me</h1>
           <h5 className="kanit summary">{json.data.aboutMeSummary}</h5>
           <div className="bullet-points">
             {json.data.aboutMe.map((item, index) => (
               <div className="bullet-point" key={index}>
                 <img className="bullet" src={BLUE_POINTER} alt="bullet point" />
-                <p className="bullet-point-text">{item}</p>
+                <p className="Inter-500">{item}</p>
               </div>
             ))}
           </div>
@@ -73,11 +73,11 @@ function App() {
         <img className="my-photo" src={MY_PHOTO} alt="my pic" />
       </div>
       <div className="experience" id="experience">
-        <h1 className="title">Experience</h1>
+        <h1 className="title courier">Experience</h1>
         <div className="workplace-list">
           {json.data.experience.map((item, index) => (
             <div className="workplace" key={index}>
-              <h5 className="year">{item.year}</h5>
+              <h5 className="year courier">{item.year}</h5>
               <div className="workplace-info">
                 <div className="workplace-title">
                   <img
@@ -85,17 +85,17 @@ function App() {
                     src={ORANGE_POINTER}
                     alt="bullet point"
                   />
-                  <h6 className="workplace-name">{item.name}</h6>
+                  <h6 className="Inter-500">{item.name}</h6>
                 </div>
-                <h5 className="workplace-location">{item.city}</h5>
-                <h5 className="workplace-description">{item.description}</h5>
+                <h5 className="workplace-location Inter-400">{item.city}</h5>
+                <h5 className="Inter-400">{item.description}</h5>
               </div>
             </div>
           ))}
         </div>
       </div>
       <div className="projects" id="projects">
-        <h1 className="title">Projects I've Worked On</h1>
+        <h1 className="title courier">Projects I've Worked On</h1>
         <div className="projects-list">
           {json.data.projects.map((item, index) => (
             <div
@@ -110,7 +110,7 @@ function App() {
                 alt="project pic"
               />
               <div className="text">
-                <h2 className="project-name">{item.name}</h2>
+                <h2 className="project-name courier">{item.name}</h2>
                 <h5 className="kanit">{item.description}</h5>
                 <div className="bullet-point">
                   <img
@@ -120,7 +120,7 @@ function App() {
                   />
 
                   <a
-                    className="bullet-point-text"
+                    className="Inter-500"
                     href={item.link}
                     target="_blank"
                     rel="noreferrer">
@@ -133,7 +133,7 @@ function App() {
                     src={BLUE_POINTER}
                     alt="bullet point"
                   />
-                  <h6 className="bullet-point-text">{item.bullet}</h6>
+                  <h6 className="Inter-500">{item.bullet}</h6>
                 </div>
               </div>
             </div>
@@ -141,7 +141,7 @@ function App() {
         </div>
       </div>
       <div className="contact" id="contacts">
-        <h1 className="title">Say Hello</h1>
+        <h1 className="title courier">Say Hello</h1>
         <h5 className="kanit subtitle">{json.data.contactSubtitle}</h5>
         <div className="buttons">
           <button
@@ -168,11 +168,11 @@ function App() {
         </div>
       </div>
       <footer>
-        <p className="footer-text">
+        <p className="Inter-500">
           Made with ❤️ at{" "}
           <a href="https://www.nfactorial.school/">nFactorial</a> in 2023
         </p>
-        <p className="footer-text grey-text">
+        <p className="Inter-500 grey-text">
           Credits: icons from <a href="https://icons8.com/">Icons8</a>
         </p>
       </footer>
