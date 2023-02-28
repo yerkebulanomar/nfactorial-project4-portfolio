@@ -1,10 +1,11 @@
 header {
   display: flex;
+  justify-content: space-between;
   padding: 32px 6%;
-  gap: 670px;
-  position: fixed;
+  /* gap: 45%; */
+  /* position: fixed; */
   top: 0;
-  width: 100%;
+  /* width: 100%; */
   background-color: #130125;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -35,11 +36,13 @@ header {
 
 .section {
   display: flex;
-  padding: 260px 6%;
+  padding: 160px 6%;
 }
 
 .promo {
   flex-direction: column;
+  display: flex;
+  padding: 160px 30% 160px 6%;
 }
 
 .promo .title {
@@ -75,7 +78,7 @@ header {
 
 .about-me {
   display: flex;
-  padding: 260px 6%;
+  padding: 160px 6%;
   justify-content: space-between;
   gap: 370px;
 }
@@ -97,7 +100,6 @@ header {
   font-size: 60px;
   line-height: 72px;
   color: #ffffff;
-  width: 75%;
 }
 
 .kanit {
@@ -142,7 +144,7 @@ header {
 
 .experience {
   display: flex;
-  padding: 200px 6%;
+  padding: 160px 6%;
   flex-direction: column;
   gap: 64px;
   padding-right: 730px;
@@ -209,7 +211,7 @@ header {
 
 .projects {
   display: flex;
-  padding: 150px 6%;
+  padding: 100px 6%;
   flex-direction: column;
   gap: 64px;
 }
@@ -250,7 +252,7 @@ a {
 
 .contact {
   display: flex;
-  padding: 200px 6%;
+  padding: 160px 6%;
   flex-direction: column;
   gap: 32px;
 }

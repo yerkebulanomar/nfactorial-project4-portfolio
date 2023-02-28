@@ -36,7 +36,7 @@ function App() {
           </button>
         </div>
       </header>
-      <div className="promo section">
+      <div className="promo">
         <h1 className="height title">
           <TypingAnimation
             text="  Hi, I’m Yerkebulan,         I build things for the web."
