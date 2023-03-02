@@ -1,10 +1,9 @@
 import "./App.css";
 import BLUE_POINTER from "./media/Pointer.svg";
 import MY_PHOTO from "./media/123.jpg";
-import ORANGE_POINTER from "./media/Orange point.svg";
 import GITHUB from "./media/github-mark-white.svg";
-import LINKEDIN_LOGO from "./media/LI-Logo.png";
-import TELEGRAM_LOGO from "./media/telegram.png";
+import LINKEDIN_LOGO from "./media/icons8-linkedin-circled-96.svg";
+import TELEGRAM_LOGO from "./media/Telegram_logo.svg";
 import TypingAnimation from "./Components/TypingAnimation";
 import json from "./index.json";
 
@@ -13,37 +12,38 @@ function App() {
     <div className="App">
       <header>
         <button
-          className="header-name courier"
+          className="header-name courier-white"
           onClick={() => window.location.replace("/#promo")}>
-          Yerkebulan Omar
+          Curriculum Vitae
         </button>
         <div className="nav-btns">
           <button
-            className="nav-btn Inter-500"
+            className="nav-btn Inter-500 white"
             onClick={() => window.location.replace("/#about")}>
             About
           </button>
           <button
-            className="nav-btn Inter-500"
+            className="nav-btn Inter-500 white"
             onClick={() => window.location.replace("/#experience")}>
             Experience
           </button>
           <button
-            className="nav-btn Inter-500"
+            className="nav-btn Inter-500 white"
             onClick={() => window.location.replace("/#projects")}>
             Projects
           </button>
           <button
-            className="nav-btn Inter-500"
+            className="nav-btn Inter-500 white"
             onClick={() => window.location.replace("/#contacts")}>
             Contacts
           </button>
+          {/* </div> */}
         </div>
       </header>
       <div className="promo" id="promo">
         <h1 className="height title courier">
           <TypingAnimation
-            text="  Hi, I’m Yerkebulan,        I build things for the web."
+            text="  Hi, I’m Yerkebulan Omar,    I build things for the web."
             speed={100}
           />
         </h1>
@@ -86,7 +86,7 @@ function App() {
                 <div className="workplace-title">
                   <img
                     className="bullet"
-                    src={ORANGE_POINTER}
+                    src={BLUE_POINTER}
                     alt="bullet point"
                   />
                   <h6 className="Inter-500">{item.name}</h6>
@@ -163,7 +163,7 @@ function App() {
             <img className="btn-img" src={GITHUB} alt="github" />
           </button>
           <button
-            className="contact-btn"
+            className="contact-btn linkedin"
             onClick={() => {
               window.open("https://www.linkedin.com", "_blank");
             }}>

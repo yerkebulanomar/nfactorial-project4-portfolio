@@ -3,7 +3,10 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: #004a7c;
+}
+.white {
+  color: #fafafa;
 }
 
 .Inter-400 {
@@ -11,13 +14,19 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #ffffff;
+  color: #004a7c;
 }
 
 .courier {
   font-family: "Courier Prime", sans-serif;
   font-weight: 700;
-  color: #ffffff;
+  color: #004a7c;
+}
+
+.courier-white {
+  font-family: "Courier Prime", sans-serif;
+  font-weight: 700;
+  color: #fafafa;
 }
 
 .kanit {
@@ -25,18 +34,19 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
-  color: #ffffff;
+  color: #004a7c;
 }
 
 header {
   display: flex;
+  justify-content: space-between;
   padding: 32px 6%;
-  gap: 45%;
   position: fixed;
   top: 0;
-  width: 100%;
-  background-color: #130125;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  left: 0;
+  right: 0;
+  background-color: #005691;
+  border-bottom: 1px solid #82c3ec;
 }
 
 .header-name {
@@ -72,7 +82,8 @@ header {
 .CV-btn {
   width: 200px;
   height: 56px;
-  background: #ffffff;
+  background: #005691;
+  color: #fafafa;
   border-radius: 2px;
   font-family: "Inter";
   font-weight: 700;
@@ -86,8 +97,8 @@ header {
 }
 
 .CV-btn:hover {
-  color: #ffffff;
-  box-shadow: inset 0 0 0 50px #423451;
+  color: #005691;
+  box-shadow: inset 0 0 0 50px #82c3ec;
 }
 
 .about-me {
@@ -131,7 +142,7 @@ header {
 .about-me .my-photo {
   width: 280px;
   height: 320px;
-  border: 4px solid rgba(255, 255, 255, 0.2);
+  border: 4px solid #e8f1f5;
 }
 
 .experience {
@@ -198,7 +209,7 @@ header {
 .project-photo {
   width: fit-content;
   height: 388px;
-  border: 4px solid rgba(255, 255, 255, 0.2);
+  border: 4px solid #e8f1f5;
 }
 
 .project-name {
@@ -207,7 +218,7 @@ header {
 }
 
 a {
-  color: #ffffff;
+  color: #004a7c;
 }
 
 .contact {
@@ -244,6 +255,10 @@ footer {
   transition: all 0.2s ease-in-out;
 }
 
+.linkedin {
+  border-radius: 4px;
+}
+
 .contact-btn:hover {
   transform: scale(1.5);
 }
@@ -256,10 +271,6 @@ footer {
 @media only screen and (max-width: 1440px) {
   .promo {
     padding-right: 25%;
-  }
-
-  header {
-    gap: 39%;
   }
 
   .about-me {
@@ -291,10 +302,6 @@ footer {
 @media only screen and (max-width: 1280px) {
   .promo {
     padding-right: 17%;
-  }
-
-  header {
-    gap: 33%;
   }
 
   .about-me {
