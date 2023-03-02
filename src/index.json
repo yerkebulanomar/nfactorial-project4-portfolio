@@ -28,7 +28,7 @@
       {
         "id": "0",
         "name": "To-Do List",
-        "picture": "./media/todolist.PNG",
+        "picture": "todolist.PNG",
         "description": "Study project that includes opening of several modal windows, addition of new items, changing categories and deleting of items",
         "link": "https://nfactorial-to-do-list.vercel.app/",
         "linkName": "nfactorial-to-do-list.vercel.app",
@@ -37,7 +37,7 @@
       {
         "id": "1",
         "name": "People Pro website",
-        "picture": "./media/peoplepro.PNG",
+        "picture": "peoplepro.PNG",
         "description": "Website visuals and inteface for a non-profit organization with several opening pages, several forms that gather information into Google Document",
         "link": "https://peoplepro.vercel.app/",
         "linkName": "peoplepro.vercel.app",
