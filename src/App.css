@@ -255,10 +255,6 @@ footer {
   transition: all 0.2s ease-in-out;
 }
 
-.linkedin {
-  border-radius: 4px;
-}
-
 .contact-btn:hover {
   transform: scale(1.5);
 }

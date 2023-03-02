@@ -163,7 +163,7 @@ function App() {
             <img className="btn-img" src={GITHUB} alt="github" />
           </button>
           <button
-            className="contact-btn linkedin"
+            className="contact-btn"
             onClick={() => {
               window.open("https://www.linkedin.com", "_blank");
             }}>
