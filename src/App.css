@@ -70,12 +70,6 @@ header {
   display: flex;
   flex-direction: column;
   padding: 260px 30% 160px 6%;
-  transition: all 0.2s ease-in-out;
-  opacity: 0.5;
-}
-
-.promo:hover {
-  opacity: 1;
 }
 
 .promo .title {
@@ -113,12 +107,6 @@ header {
   padding: 260px 6%;
   justify-content: space-between;
   gap: 370px;
-  transition: all 0.2s ease-in-out;
-  opacity: 0.5;
-}
-
-.about-me:hover {
-  opacity: 1;
 }
 
 .text {
@@ -164,12 +152,6 @@ header {
   flex-direction: column;
   gap: 64px;
   padding-right: 730px;
-  transition: all 0.2s ease-in-out;
-  opacity: 0.5;
-}
-
-.experience:hover {
-  opacity: 1;
 }
 
 .experience .workplace-list {
@@ -208,12 +190,6 @@ header {
   padding: 160px 6%;
   flex-direction: column;
   gap: 64px;
-  transition: all 0.2s ease-in-out;
-  opacity: 0.5;
-}
-
-.projects:hover {
-  opacity: 1;
 }
 
 .projects-list {
@@ -251,12 +227,6 @@ a {
   padding: 160px 6%;
   flex-direction: column;
   gap: 32px;
-  transition: all 0.2s ease-in-out;
-  opacity: 0.5;
-}
-
-.contact:hover {
-  opacity: 1;
 }
 
 footer {
