@@ -42,6 +42,15 @@
         "link": "https://peoplepro.vercel.app/",
         "linkName": "peoplepro.vercel.app",
         "bullet": "HTML, CSS, React JS, Bootstrap"
+      },
+         {
+        "id": "2",
+        "name": "Pet-project "Jattap al"",
+        "picture": "peoplepro.PNG",
+        "description": "Web appplication that helps memorize poems, verses and texts",
+        "link": "https://jattapal.vercel.app/",
+        "linkName": "jattapal.vercel.app/",
+        "bullet": "HTML, CSS, React JS, Bootstrap"
       }
     ],
     "contactSubtitle": "I have a lot of passion to explore and learn new things and looking forward for opportunities."
