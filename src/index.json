@@ -45,9 +45,9 @@
       },
          {
         "id": "2",
-        "name": "Pet-project Jattap Al (memorize in Kazakh)",
+        "name": "Pet-project Jattapal",
         "picture": "JattapAl.PNG",
-        "description": "Web appplication that helps memorize poems, verses and texts",
+        "description": "Web appplication that helps memorize poems, verses and texts. 'Jattap al' means 'memorize' in Kazakh",
         "link": "https://jattapal.vercel.app/",
         "linkName": "jattapal.vercel.app/",
         "bullet": "HTML, CSS, React JS, Bootstrap"
